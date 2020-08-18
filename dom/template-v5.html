@@ -1,7 +1,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 <div id="app">
-    <p>{{titulo}}</p>
+    <p v-once>{{titulo}}</p>
     <p>{{saudacao()}}</p>
     <a v-bind:href="link">Google</a>
     <!--diretiva = v-bind-->
@@ -16,6 +16,7 @@
         },
         methods: {
             saudacao() {
+                this.titulo = 'Bom dia!!!'
                 return this.titulo
             }
         }
