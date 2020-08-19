@@ -5,6 +5,8 @@ new Vue({
         idade: 30,
     },
     methods: {
-        
+        idadeVezes3(){
+            return this.idade * 3
+        }
     }
 })
