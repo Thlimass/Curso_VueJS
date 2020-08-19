@@ -7,6 +7,9 @@ new Vue({
     methods: {
         idadeVezes3(){
             return this.idade * 3
+        },
+        random(){
+            return Math.random()
         }
     }
 })
